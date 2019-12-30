@@ -63,13 +63,13 @@
 
             	<!-- User Photo -->
             	<div id="mws-user-photo">
-                	{{--<img src="{{$user->profile}}" alt="User Photo">--}}
+                	<img src="{{$user->profile}}" alt="User Photo">
                 </div>
                 
                 <!-- Username and Functions -->
                 <div id="mws-user-functions">
                     <div id="mws-username">
-{{--                        Hello,{{$user->username}}--}}
+                        Hello,{{$user->username}}
                     </div>
                     <ul>
                         <li><a href="#">修改密码</a></li>
