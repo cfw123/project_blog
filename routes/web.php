@@ -14,7 +14,7 @@
 /*Route::get('/', function () {
     return view('welcome');
 });*/
-
+Route::get('/', 'ArticleController@lists');
 //后台路由组
 Route::group(['middleware'=>'login'], function(){
     //后台路由规则
@@ -23,7 +23,7 @@ Route::group(['middleware'=>'login'], function(){
     //用户管理
     Route::get('/user/add', 'UserController@add');
     Route::post('/user/insert', 'UserController@insert');
-    Route::get('/user', 'UserController@index');
+    Route::get('/user/index', 'UserController@index');
     Route::get('/user/edit/{id}', 'UserController@edit');
     Route::post('/user/update', 'UserController@update');
     Route::get('/user/delete/{id}', 'UserController@delete');
